@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="main">
+        <div>
+            <h1 class="spacing">Calculadora de IMC</h1>
+        </div>
+        <div class="ms-5">
+            <form action="" class="d-flex-form" id="formulario">
+                <label for="name">Nome</label>
+                <input type="text" id="nome" name="nome" autofocus required>
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade" min="0" max="130" required>
+                <label for="peso">Peso</label>
+                <input type="number" id="peso" name="peso" step="0.01" min="0.0" max="500.0" required>
+                <label for="altura">Altura</label>
+                <input type="number" id="altura" name="altura" step="0.01" min="0.0" max="2.70" required>
+                <div class="buttons">
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                    <button type="reset" class="btn-limpar">Limpar</button>
+                </div>
+            </form>
+            <div class="d-flex imc">
+                <p>IMC</p>
+                <input type="text" readonly id="imc">
+                <span id="aviso"></span>
+            </div>
+        </div>
+        <div id="resultado">
+            <h2 class="spacing imc-h2">IMC</h2>
+            <span id="nome" class="pessoa"></span>
+            <span id="idade" class="pessoa"></span>
+            <span id="peso" class="pessoa"></span>
+            <span id="altura" class="pessoa"></span>
+            <span id="imc-pessoa" class="pessoa"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
