@@ -21,7 +21,7 @@ button { border: transparent; cursor: pointer; }
 button:focus-visible { outline: none; }
 
   
-#main { width: 400px; margin: 40px; border-radius: 2px; background-color: var(--gray); padding: 20px 0px;  }
+#main { width: 400px; margin: auto; border-radius: 2px; background-color: var(--gray); padding: 20px 0px;  }
 #main .d-flex-form { display: flex; flex-direction: column; width: 90%; border-radius: 20px; }
 #main .spacing { padding: 0px 80px 20px 30px; }
 #main input { margin-bottom: 12px; padding-left: 5px; font-size: 14px; }
